@@ -1,0 +1,176 @@
+---
+import { Image } from "astro:assets";
+import behavaiLogo from "../assets/behavai.png";
+import Layout from "../layouts/Layout.astro";
+
+const seoDescription =
+	"BehavAI - Empowering BCBAs and RBTs with intelligent automation for ABA therapy management. Streamline paperwork, visualize outcomes, and optimize treatment plans.";
+const seoKeywords =
+	"ABA therapy, BCBA software, RBT tools, behavioral therapy, therapy management, patient outcomes, treatment planning, automation";
+---
+
+<Layout
+	title="BehavAI - Intelligent ABA Therapy Management Platform"
+	description={seoDescription}
+	keywords={seoKeywords}
+>
+	<main class="min-h-screen">
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-b from-blue-50 to-white py-20">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<div class="w-[200px] h-[200px] mx-auto mb-8">
+						<Image
+							src={behavaiLogo}
+							alt="BehavAI Logo"
+							width={400}
+							height={400}
+							class="w-full h-full object-contain"
+						/>
+					</div>
+					<h1 class="text-5xl font-bold text-gray-900 mb-6">
+						Streamline ABA Therapy Management with BehavAI
+					</h1>
+					<p class="text-xl text-gray-600 mb-8">
+						Empowering BCBAs and RBTs with intelligent automation for paperwork,
+						data visualization, and treatment planning
+					</p>
+					<a
+						href="https://calendar.app.google/3Em2QoqrbAdiSGJd7"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold
+						hover:bg-blue-700 transition-colors inline-flex items-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5 mr-2"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+							></path>
+						</svg>
+						Schedule a Call
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="py-20" id="features">
+			<div class="container mx-auto px-4">
+				<div class="grid md:grid-cols-3 gap-12">
+					<div class="text-center">
+						<div
+							class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center
+							mx-auto mb-4"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-blue-600"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+								></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Automated Paperwork</h3>
+						<p class="text-gray-600">
+							Reduce administrative burden with smart documentation and
+							reporting tools
+						</p>
+					</div>
+
+					<div class="text-center">
+						<div
+							class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center
+							mx-auto mb-4"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-blue-600"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+								></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Data Visualization</h3>
+						<p class="text-gray-600">
+							Track and analyze patient progress with intuitive visual insights
+						</p>
+					</div>
+
+					<div class="text-center">
+						<div
+							class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center
+							mx-auto mb-4"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-blue-600"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+								></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Treatment Planning</h3>
+						<p class="text-gray-600">
+							Develop and optimize treatment plans with AI-powered
+							recommendations
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-white py-20">
+			<div class="container mx-auto px-4">
+				<div class="text-center">
+					<h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+					<address class="not-italic">
+						<p class="mb-2">5000 Forbes Ave</p>
+						<p class="mb-4">Pittsburgh, PA 15213</p>
+						<a
+							href="mailto:contactbehavai@gmail.com"
+							class="text-blue-400 hover:text-blue-300"
+						>
+							contactbehavai@gmail.com
+						</a>
+					</address>
+				</div>
+				<div
+					class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+				>
+					<p>&copy; {new Date().getFullYear()} BehavAI. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</main>
+</Layout>
